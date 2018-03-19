@@ -55,10 +55,9 @@ function showDatum() {
 }
 showDatum(); //Laat de datum zien
 
-//Background image veranderen bij message-verandering/bepaalde dagdelen
-//var backgroundChangeOne = document.querySelector(".body");
-//backgroundChangeOne.classList
-
 //Hieronder Tweenmax
-TweenMax.to("#message", 6, {color:"#ace7ef"});
-TweenMax.to("#message", 0.5, {top: 250, ease: Elastic.easeOut});
+TweenMax.to("#datum", 6, {color:"#ace7ef"});
+TweenMax.staggerFrom("#message", 0.5, {y: 150, ease:Power1.easeOut}, 0.1);
+TweenMax.staggerFrom("#dagDatum", 0.5, {y: -150, ease:Power1.easeOut}, 0.1);
+TweenMax.staggerFrom("#main", 2, {x: -150, ease:Power1.easeOut}, 0.1);
+TweenMax.staggerFrom("#digitalClock", 3, {x: 150, ease:Power1.easeOut}, 0.1);
