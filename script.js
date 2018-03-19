@@ -17,7 +17,7 @@ setInterval(showTime,1000);
 function showMessage(hours) {
   console.log(hours);
 
-  if (hours > 6 && hours < 12) {
+  if (hours > 5 && hours < 12) {
     document.getElementById("greeting").innerText = "morning";
     document.getElementById("greeting").textContent = "morning";
     document.body.style.backgroundImage = "url(martian2.jpg)";
@@ -60,4 +60,5 @@ showDatum(); //Laat de datum zien
 //backgroundChangeOne.classList
 
 //Hieronder Tweenmax
-TweenMax.to("#bla", 6, {color:"#ace7ef"});
+TweenMax.to("#message", 6, {color:"#ace7ef"});
+TweenMax.to("#message", 0.5, {top: 250, ease: Elastic.easeOut});
