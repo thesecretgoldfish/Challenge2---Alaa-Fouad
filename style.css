@@ -12,7 +12,7 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
 }
 body h1 {
   text-align: center;
