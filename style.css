@@ -80,13 +80,20 @@ main {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  width: 70vw;
-  height: 60vh;
+  width: 75vw;
+  height: 65vh;
+  padding: 1em;
   background-color: rgba(0,0,0,.6);
   /*box-shadow: 0px 4px 30px 5px #911818;*/
 }
+h1 {
+  font-size: 6rem;
+}
 section {
-  font-size: 6.5rem;
+  font-size: 7rem;
+}
+h2 {
+  font-size: 3rem;
 }
 }
 
