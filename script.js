@@ -50,14 +50,14 @@ function showDatum() {
   var maand = datum.getMonth() + 1;
   var jaar = datum.getFullYear();
 
-  var lDatum = dagMaand + "/" + maand + "/" + jaar;
-  document.getElementById("datum").innerHTML = lDatum;
+  var Datum = dagMaand + "/" + maand + "/" + jaar;
+  document.getElementById("datum").innerHTML = Datum;
 }
-showDatum(); //Laat de datum zien
+showDatum();
 
 //Hieronder Tweenmax
 TweenMax.to("#datum", 6, {color:"#ace7ef"});
-TweenMax.staggerFrom("#message", 0.5, {y: 150, ease:Power1.easeOut}, 0.1);
-TweenMax.staggerFrom("#dagDatum", 0.5, {y: -150, ease:Power1.easeOut}, 0.1);
+TweenMax.staggerFrom("#message", 0.5, {y: 250, ease:Power1.easeOut}, 0.1);
+TweenMax.staggerFrom("#dagDatum", 0.5, {y: -250, ease:Power1.easeOut}, 0.1);
 TweenMax.staggerFrom("#main", 2, {x: -150, ease:Power1.easeOut}, 0.1);
 TweenMax.staggerFrom("#digitalClock", 3, {x: 150, ease:Power1.easeOut}, 0.1);
